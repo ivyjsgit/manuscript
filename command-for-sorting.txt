@@ -1,0 +1,1 @@
+mv `grep -lir 'note-name' .` ../directory/
