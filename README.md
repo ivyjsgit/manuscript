@@ -1,5 +1,4 @@
 # About 
----
 
 Manuscript is the digital analogue to a bound notebook of staff paper. It uses OCR to transform your handwritten notes to digitalized notes in real time.
 
