@@ -56,8 +56,8 @@ if __name__ == "__main__":
 
     master.geometry("1280x800")
     canvas = Canvas(master)
-
-    note = Note("/Users/ivy/Desktop/Senior Seminar/manuscript/note-viewer/test-note.txt")
+    
+    note = Note(sys.argv[1])
 
     note.draw(canvas)
 
