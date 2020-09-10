@@ -30,7 +30,8 @@ class Note:
 
         return lines
 
-    def draw(self, canvas):
+    def draw(self, root, canvas):
+        root.title(self.name)
         for line in self.lines:
             print(f"Drawing {line.point_1.x} {line.point_1.y} {line.point_2.x} {line.point_2.y}")
             canvas.create_line(line.point_1.x,line.point_1.y,line.point_2.x,line.point_2.y)
@@ -59,7 +60,7 @@ if __name__ == "__main__":
 
     note = Note(sys.argv[1])
 
-    note.draw(canvas)
+    note.draw(master, canvas)
 
     master.mainloop()
 
