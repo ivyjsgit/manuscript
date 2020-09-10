@@ -21,7 +21,7 @@ class Note:
             splitted_by_semicolon = line_of_text.split(";")
             splitted_by_semicolon.remove('')
 
-            for i in range(0,len(splitted_by_semicolon)-1,2):
+            for i in range(0,len(splitted_by_semicolon)-1):
                 current_pair = splitted_by_semicolon[i].split(",")
                 next_pair = splitted_by_semicolon[i+1].split(",")
                 line = Line(Point(current_pair[0],current_pair[1]), Point(next_pair[0],next_pair[1]))
@@ -56,7 +56,7 @@ if __name__ == "__main__":
 
     master.geometry("1280x800")
     canvas = Canvas(master)
-    
+
     note = Note(sys.argv[1])
 
     note.draw(canvas)
