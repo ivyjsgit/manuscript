@@ -1,4 +1,7 @@
 import io
+from tkinter import *
+from tkinter.ttk import * 
+
 
 class Note:
     name = "Unnamed Note"
@@ -27,6 +30,12 @@ class Note:
 
         return lines
 
+    def draw(self, canvas):
+        for line in self.lines:
+            print(f"Drawing {line.point_1.x} {line.point_1.y} {line.point_2.x} {line.point_2.y}")
+            canvas.create_line(line.point_1.x,line.point_1.y,line.point_2.x,line.point_2.y)
+            canvas.pack(fill = BOTH, expand = True)
+
 class Point:
     x=-1
     y=-1
@@ -42,5 +51,16 @@ class Line:
         self.point_1=point_1
         self.point_2=point_2
 
+if __name__ == "__main__":
+    master = Tk()
+
+    master.geometry("1280x800")
+    canvas = Canvas(master)
+
+    note = Note("/Users/ivy/Desktop/Senior Seminar/manuscript/training-data/notes/Sixteenth-Note/14-113.txt")
+
+    note.draw(canvas)
+
+    master.mainloop()
 
 
