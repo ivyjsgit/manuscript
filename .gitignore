@@ -1,3 +1,6 @@
-
+model-trainer/.gradle/*
+model-trainer/.idea/*
+model-trainer/build/*
 .DS_Store
 training-data/*
+model-trainer/*
