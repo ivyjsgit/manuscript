@@ -14,4 +14,4 @@ The specific version that I am using is a fork of Alexander Pacha's fork, which 
 
 ## iOS Port
 
-Currently, due to difficulties challenges experienced with Tensorflow and with Android development in general, I am deciding to pivot Manuscript in a new direction. I am now directing my efforts to my original vision of an iOS version of this app using CoreML as the machine learning backend and Swift as the main programming language.
+Due to difficulties experienced with Tensorflow and with Android development in general, I am deciding to pivot Manuscript in a new direction. I am now directing my efforts towards my original vision of an iOS version of the app using CoreML as the machine learning backend and Swift as the main programming language.
